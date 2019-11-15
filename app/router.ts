@@ -19,4 +19,13 @@ export default (app: Application) => {
   router.del('/api/footprint/:id', controller.footprint.deleteById);
   router.post('/api/footprint/:id', controller.footprint.updateById);
 
+  /**
+  * 标签
+  */
+  router.get('/api/tag', controller.tag.list);
+  router.get('/api/tag/:id', controller.tag.findById);
+  router.post('/api/tag', controller.tag.create);
+  router.del('/api/tag/:id', controller.tag.deleteById);
+  router.post('/api/tag/:id', controller.tag.updateById);
+
 };
