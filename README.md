@@ -34,6 +34,6 @@ $ npm stop
 #### build
 
 ```bash
-docker build -t tb/tomato-user .
+docker build -t tb/tomato-footprint .
 docker-compose up
 ```

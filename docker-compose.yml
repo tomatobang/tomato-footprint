@@ -11,5 +11,8 @@ services:
       CONSUL_IP:
       DATABASE_MONGODB_USERNAME_PASSWORD:
       DATABASE_MONGODB_HOST_PORT:
+      REDIS_PORT:
+      REDIS_HOST:
+      REDIS_PASSWORD:
     ports:
      - "10002:10002"

@@ -30,7 +30,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=tomato-footprint",
+    "start": "egg-scripts start --title=tomato-footprint",
     "stop": "egg-scripts stop --title=tomato-footprint",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
@@ -38,6 +38,8 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "clean": "ets clean",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },
