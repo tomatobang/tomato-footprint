@@ -1,7 +1,7 @@
 'use strict';
 const env = process.env;
 
-exports.middleware = [ 'errorhandler', ];
+exports.middleware = ['errorhandler',];
 
 exports.security = {
   csrf: {
@@ -23,4 +23,13 @@ exports.static = {
 exports.mongoose = {
   url: 'mongodb://' + env.DATABASE_MONGODB_USERNAME_PASSWORD + '@' + env.DATABASE_MONGODB_HOST_PORT + '/tomato-footprint',
   options: {},
+};
+
+exports.redis = {
+  client: {
+    port: env.REDIS_PORT || 6379,
+    host: env.REDIS_HOST || '127.0.0.1',
+    password: env.REDIS_PASSWORD || '',
+    db: 0,
+  }
 };

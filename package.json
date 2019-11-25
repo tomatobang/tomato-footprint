@@ -1,7 +1,7 @@
 {
   "name": "tomato-footprint",
   "version": "1.0.0",
-  "description": "bill module for tomatobang",
+  "description": "footprint module for tomatobang",
   "private": true,
   "egg": {
     "declarations": true,
@@ -11,6 +11,7 @@
     "consul": "^0.36.0",
     "egg": "^2.15.1",
     "egg-mongoose": "^2.1.1",
+    "egg-redis": "^2.4.0",
     "egg-scripts": "^2.11.0",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1"

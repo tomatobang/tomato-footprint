@@ -13,7 +13,7 @@ see [egg docs][egg] for more detail.
 ```bash
 $ npm i
 $ npm run dev
-$ open http://localhost:8002/
+$ open http://localhost:10002/
 ```
 
 ### Deploy
@@ -29,5 +29,11 @@ $ npm stop
 - Use `npm test` to run unit test.
 - Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
 
+### Docker
 
-[egg]: https://eggjs.org
+#### build
+
+```bash
+docker build -t tb/tomato-user .
+docker-compose up
+```

@@ -19,7 +19,7 @@ export default () => {
 
   config.cluster = {
     listen: {
-      port: 8002,
+      port: 10002,
     },
   };
 
@@ -80,6 +80,15 @@ export default () => {
   config.mongoose = {
     url: 'mongodb://127.0.0.1:27017/tomato-footprint',
     options: {},
+  };
+
+  config.redis = {
+    client: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: '',
+      db: 0,
+    },
   };
 
   config.token = {
